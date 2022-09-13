@@ -87,18 +87,21 @@ import puska from './scale_1200.webp';
  
 const turtles = [
   {
+    id :1,
     name: 'Kroyan Manvel',
     nickname: 'Al1gator774',
     weapon: 'AK-47',
     imgUrl: manvel,
   },
   {
+    id :2,
     name: 'Азамат & Сослан',
     nickname: 'Miyagi & Andy',
     weapon: 'Микрофон',
     imgUrl: miyagi,
   },
   {
+    id :3,
     name: 'Pushkin Aleksandr',
     nickname: 'Pushok',
     weapon: 'Ручка',
@@ -114,7 +117,7 @@ const turtles = [
 
           return (
             <div className='kart'>
-              <h3>{asa.name}</h3>
+              <h3 key={asa.id}>{asa.name}</h3>
               <small><b>{asa.nickname}</b></small>
               <p>{asa.weapon}</p>
               <img src={asa.imgUrl}></img>
